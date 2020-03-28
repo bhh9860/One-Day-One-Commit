@@ -8,3 +8,12 @@ set은 중복을 허용하지 않기 때문에 set로 바꿔준뒤 list로 바�
 a = ['1', '2', '3', '4']
 a = list(map(int, a))
 a => [1, 2, 3, 4]
+
+파이썬 얕은복사 깊은복사
+https://wikidocs.net/16038 참조
+a = [1, 2]
+b = a 일때, id값이 서로 같다.
+따라서 a의 값을 변경하면 b의 값도 변경된다.
+위 문제를 해결하기 위해서는 copy메소드를 이용해야 한다.
+import copy
+b = copy.deepcopy(a)
