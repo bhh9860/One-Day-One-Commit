@@ -30,3 +30,4 @@ for z in range(int(input())):
 			print(sosu2, sosu1)
 		else:
 			print(sosu1, sosu2)
+#
