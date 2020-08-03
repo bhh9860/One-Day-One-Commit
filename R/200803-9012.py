@@ -1,7 +1,7 @@
 for _ in range(int(input())):
 	a = list(input())
 	b = 0
-	if len(a)%2==1: #애초에 홀수면 VPS가 아님
+	if len(a)%2==1: #애초에 홀수면 VPS가 아님.
 		print('NO')
 	else:
 		while(1):
