@@ -4,7 +4,7 @@ def bun(num): #분해함수
 	a = list(map(int, a)) 
 	return sum(a)
 '''a = sum(map(int, str(num)))
-	 return a + num 로 대체가능'''
+	 return a + num 로 대체가능.'''
 	
 a = int(input())
 if a < 10:
