@@ -13,3 +13,5 @@ elif a == [' ']:
 	pass
 
 print(count)
+
+#a = print(len(input().split()))
