@@ -32,3 +32,8 @@ len(a) -> 3
 find와 index의 차이점
 값이 없을 경우에 index는 오류를 반환하고 find는 -1을 반환함. 이건 알고있었고
 a = ['a']일 경우에 find는 못찾는데 index는 찾아진다는 사실은 몰랐다.
+
+리스트 공백 없이 한번에 받는 법
+a = ' '.join(input()).split()
+a = list(input().split())
+무슨 차이가 있는 지는 잘 모르곘지만 어쨌든 한번에 됨.
