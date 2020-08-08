@@ -1,4 +1,4 @@
-
+#.
 a = int(input())
 def fac(i):
 	if i == 1 or i == 0:
