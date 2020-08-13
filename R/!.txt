@@ -39,3 +39,20 @@ a = list(input().split())
 #int
 a = list(map(int, input().split()))
 무슨 차이가 있는 지는 잘 모르곘지만 어쨌든 한번에 됨.
+
+리스트 컴프리헨션
+예시 1 - 리스트 생성
+[x for x in range(10)]
+range(10)을 중간 x에 넣고, 그 x를 출력함
+예시 2 - 받은 값 출력
+[print(int(i)-a*b)for i in input().split()]
+input한 값들을 스플릿해서 하나씩 i에 넣고, 문자열일테니 int()로 바꿔주면서 a*b을 뺀 값을 print함
+예시 3 - 조건 걸기
+[x for x in range(1, 10+1) if x % 2 == 0]
+-> [2, 4, 6, 8, 10]
+예시 4 - 중복 for
+[(x, y) for x in ['a', 'b', 'c'] for y in ['a', 'b', 'c']
+-> ['a', 'a'], ['a', 'b'], ['a', 'c'], ['b', 'a']...
+예시 5 - 중복 if
+[x for x in range(10) if x < 5 if x % 2 == 0]
+-> [0, 2, 4]
