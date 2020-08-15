@@ -62,3 +62,5 @@ input한 값들을 스플릿해서 하나씩 i에 넣고, 문자열일테니 int
 예시 5 - 중복 if
 [x for x in range(10) if x < 5 if x % 2 == 0]
 -> [0, 2, 4]
+예시 6 - 입력 수만큼 입력받기
+a = [list(map(int,input().split())) for _ in range(n)]
