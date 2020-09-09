@@ -15,6 +15,27 @@ for i in range(gumi-1):
 		tigai[tigai.index(a)] = 0
 	
 ans.sort()	
-anslist = []
-for j in ans:
-	anslist.append(hito[])
+
+k = 0
+for i in ans:
+	hito.insert(i+1+k, -1)
+	k += 1 #추가하면 추가할 수록 뒤로 밀리기 때문에 k로 방지
+	
+k = []
+anslist =[]
+for i in hito:
+	if i != -1:
+		k.append(i)
+	else:
+		anslist.append(k)
+		k = []
+anslist.append(k)
+
+saigo = 0
+for i in anslist:
+	if len(i) == 1:
+		pass
+	else:
+		saigo += max(i) - min(i)
+
+print(saigo)
