@@ -15,4 +15,3 @@ if k == b:
 	print(-1)
 else:
 	[print(i, end=' ') for i in b]
-;
