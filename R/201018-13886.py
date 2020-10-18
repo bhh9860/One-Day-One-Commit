@@ -1,0 +1,5 @@
+a, b, c, d = list(map(int, input().split()))
+x = (a+b)-(c+d)
+y = (a+c)-(b+d)
+z = (a+d)-(b+c)
+print(min([abs(x), abs(y), abs(z)]))
