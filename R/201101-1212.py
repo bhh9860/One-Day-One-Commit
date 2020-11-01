@@ -1,0 +1,5 @@
+a = input()
+b = '0o'+str(a)
+b = int(b, 8)
+b=bin(b)
+print(b[2:])
