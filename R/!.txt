@@ -99,3 +99,10 @@ input()을 사용했다면 어떠한 것도 고치지말고 코드 제일 앞에
 import sys
 input=sys.stdin.readline
 를 추가해보자. 될 지도?
+
+***** print에서 ,을 쓸 때 공백 없이 출력 *****
+a=0, b=1, c= 2
+print(a, b, c)
+=> 0 1 2
+print(a, b, c, sep='')
+=> 012
